@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icecream Parlor</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
+  <header class="container-fluid"></header>
+
+  <!-- SECTION CHECKOUT -->
+  <main class="container-fluid">
+    <section class="row justify-content-center">
+      <div class="col-5">
+        <section class="row">
+          <div class="col-6">
+            <p>NAME</p>
+          </div>
+          <div class="col-2">
+            <p>QTY</p>
+          </div>
+          <div class="col-2">
+            <p>EACH</p>
+          </div>
+          <div class="col-2">
+            <p>TOTAL</p>
+          </div>
+          <div id="summary" class="col-12"></div>
+        </section>
+      </div>
+
+      <!-- SECTION ICE CREAM CONTENTS-->
+      <div class="col-5">
+        <section class="row">
+          <div class="col-12">
+            <p>TOPPINGS</p>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style" onclick="">
+                <div class=""><img
+                    src="https://images.unsplash.com/photo-1627494113508-9ba5b63d9d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHNwcmlua2xlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12">
+            <p>VESSELS</p>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p>ICE CREAM</p>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light card-style mb-3" onclick="">
+                <div class=""><img src="" alt="">
+                  <p class="text-center text-align">SPRINKLES $2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+    </section>
+
+  </main>
+  <footer class="container-fluid"></footer>
+
+</body>
+
+</html>
