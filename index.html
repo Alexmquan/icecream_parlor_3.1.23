@@ -32,35 +32,37 @@
   }
 </style>
 
-<body class="debug">
-  <header class="container-fluid"></header>
+<body class="">
+  <header class="container-fluid">
+    <h1 class="p-3 bold-text">WELCOME TO THE CANDY SHOP!</h1>
+  </header>
 
   <!-- SECTION CHECKOUT -->
   <main class="container-fluid">
-    <section class="row justify-content-center">
+    <section class="row justify-content-center mt-5">
       <div class="col-5">
         <section class="row">
-          <div class="col-6">
-            <p>NAME</p>
+          <div class="col-6 main-border">
+            <h5 class="p-2">NAME</h5>
           </div>
-          <div class="col-2">
-            <p>QTY</p>
+          <div class="col-2 main-border">
+            <h5 class="p-2">QTY</h5>
           </div>
-          <div class="col-2">
-            <p>COST</p>
+          <div class="col-2 main-border">
+            <h5 class="p-2">COST</h5>
           </div>
-          <div class="col-2">
-            <p>TOTAL</p>
+          <div class="col-2 main-border">
+            <h5 class="p-2">TOTAL</h5>
           </div>
           <div id="summary" class="col-12">
 
           </div>
-          <div id="itemName" class="col-6"></div>
-          <div id="itemQuantity" class="col-2"></div>
-          <div id="itemCost" class="col-2"></div>
-          <div id="itemTotal" class="col-2"></div>
+          <div id="itemName" class="col-6 main-border set-height"></div>
+          <div id="itemQuantity" class="col-2 main-border set-height"></div>
+          <div id="itemCost" class="col-2 main-border set-height"></div>
+          <div id="itemTotal" class="col-2 main-border set-height"></div>
 
-          <div id="allTotal" class="col-12 d-flex pe-5 py-3 justify-content-end">
+          <div id="allTotal" class="col-12 d-flex pe-5 py-3 justify-content-end main-border">
           </div>
         </section>
       </div>
@@ -71,10 +73,10 @@
         <section class="row">
 
           <div class="col-12">
-            <p>TOPPINGS</p>
+            <p class="bold-text">TOPPINGS</p>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addTopping('sprinkles')">
+            <div class="p-3 card-style" onclick="addTopping('sprinkles')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1627494113508-9ba5b63d9d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHNwcmlua2xlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -83,7 +85,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addTopping('gummy bears')">
+            <div class="p-3 card-style" onclick="addTopping('gummy bears')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1635342219731-4ae2bf39e1e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3VtbXklMjBiZWFyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -92,7 +94,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addTopping('almonds')">
+            <div class="p-3 card-style" onclick="addTopping('almonds')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1602948750761-97ea79ee42ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fENIT1BQRUQlMjBBTE1PTkRTfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -101,11 +103,11 @@
             </div>
           </div>
 
-          <div class="col-12">
-            <p>VESSELS</p>
+          <div class="col-12 align-items-center d-flex">
+            <p class="bold-text">VESSELS</p>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addContainer('waffle cone')">
+            <div class="p-3 card-style" onclick="addContainer('waffle cone')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1513329634746-37399553de66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt="">
@@ -114,7 +116,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addContainer('cup')">
+            <div class="p-3 card-style" onclick="addContainer('cup')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1534706936160-d5ee67737249?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8SUNFJTIwQ1JFQU0lMjBDVVB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -123,7 +125,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addContainer('sprinkle cone')">
+            <div class="p-3 card-style" onclick="addContainer('sprinkle cone')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1504050502639-3d3c3f6266cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxESVBQRUQlMjBDT05FfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -133,10 +135,10 @@
           </div>
 
           <div class="col-12">
-            <p>ICE CREAM</p>
+            <p class="bold-text">ICE CREAM</p>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('caramel')">
+            <div class="p-3 card-style" onclick="addIcecream('caramel')">
               <div class=""><img
                   src="https://images.unsplash.com/flagged/photo-1557234985-425e10c9d7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -145,7 +147,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('unicorn')">
+            <div class="p-3 card-style" onclick="addIcecream('unicorn')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1581268879726-e9066753b737?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc0fHxpY2UlMjBjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -154,7 +156,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('strawberry')">
+            <div class="p-3 card-style" onclick="addIcecream('strawberry')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1621096229451-38ce90f1035c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjg4fHxpY2UlMjBjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -163,7 +165,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('vanilla')">
+            <div class="p-3 card-style" onclick="addIcecream('vanilla')">
               <div class=""><img
                   src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
                   alt="">
@@ -172,7 +174,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('cookies')">
+            <div class="p-3 card-style" onclick="addIcecream('cookies')">
               <div class=""><img
                   src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt="">
                 <p class="text-center text-align">COOKIES $4</p>
@@ -180,7 +182,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="addIcecream('ube')">
+            <div class="p-3 card-style" onclick="addIcecream('ube')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw5NDM2NDQzfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">

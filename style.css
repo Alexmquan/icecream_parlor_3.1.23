@@ -7,7 +7,9 @@ img {
 
 .card-style {
   box-shadow: 2px 2px 4px black;
-  background-color: #ffe5d9;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #FFCAD4;
   border-radius: 5px;
   transition: all .2s ease;
 }
@@ -19,4 +21,18 @@ img {
 body {
   background-color: #D8E2DC;
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.bold-text {
+  color: #1F7A8C;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.main-border {
+  border: 3px solid #1F7A8C;
+}
+
+.set-height {
+  min-height: 60vh;
 }
