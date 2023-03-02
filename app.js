@@ -53,8 +53,85 @@ const containers = [{
   price: 3
 }]
 
-function drawIcecream() {
+
+
+
+
+
+function addContainer(container) {
+  let newContainer = containers.find(con => con.name == container)
+  newContainer.quantity++
+
+  drawAll()
+}
+
+function addTopping(topping) {
+  let newTopping = toppings.find(top => top.name == topping)
+  newTopping.quantity++
+
+  drawAll()
+}
+
+function addIcecream() {
 
 }
 
-function vessel
+
+
+
+
+
+function drawAll() {
+  let thingName = ''
+  let quantity = ''
+  let cost = ''
+  let total = ''
+
+  containers.forEach(con => {
+    if (con.quantity) {
+      quantity += `<h3>${con.quantity}</h3>`
+      thingName += `<h3>${con.name}</h3>`
+      cost += `<h3>$${con.price}</h3>`
+      total += `<h3>$${con.quantity * con.price}</h3>`
+    }
+
+  })
+
+  toppings.forEach(top => {
+    if (top.quantity) {
+      quantity += `<h3>${top.quantity}</h3>`
+      thingName += `<h3>${top.name}</h3>`
+      cost += `<h3>$${top.price}</h3>`
+      total += `<h3>$${top.quantity * top.price}</h3>`
+    }
+  })
+  document.getElementById('itemName').innerHTML = thingName
+  document.getElementById('itemQuantity').innerHTML = quantity
+  document.getElementById('itemCost').innerHTML = cost
+  document.getElementById('itemTotal').innerHTML = total
+}
+
+
+// function drawTopping() {
+//   let thingName = ''
+//   let quantity = ''
+//   let cost = ''
+//   let total = ''
+
+
+
+//   document.getElementById('icecreamName').innerHTML = thingName
+//   document.getElementById('icecreamQuantity').innerHTML = quantity
+//   document.getElementById('icecreamCost').innerHTML = cost
+//   document.getElementById('icecreamTotal').innerHTML = total
+
+
+// }
+
+
+
+
+
+
+
+

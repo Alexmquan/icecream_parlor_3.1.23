@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Icecream Parlor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
-  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,17 +47,18 @@
             <p>QTY</p>
           </div>
           <div class="col-2">
-            <p>EACH</p>
+            <p>COST</p>
           </div>
           <div class="col-2">
             <p>TOTAL</p>
           </div>
           <div id="summary" class="col-12">
-            <div id="icecreamName" class="col-6"></div>
-            <div id="icecreamQuantity" class="col-2"></div>
-            <div id="icecreamCost" class="col-2"></div>
-            <div id="icecreamTotal" class="col-2"></div>
+
           </div>
+          <div id="itemName" class="col-6"></div>
+          <div id="itemQuantity" class="col-2"></div>
+          <div id="itemCost" class="col-2"></div>
+          <div id="itemTotal" class="col-2"></div>
         </section>
       </div>
 
@@ -73,7 +76,7 @@
             <p>TOPPINGS</p>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addTopping('sprinkles')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1627494113508-9ba5b63d9d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHNwcmlua2xlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -82,7 +85,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addTopping('gummy bears')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1635342219731-4ae2bf39e1e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3VtbXklMjBiZWFyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -91,7 +94,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addTopping('almonds')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1602948750761-97ea79ee42ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fENIT1BQRUQlMjBBTE1PTkRTfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -104,7 +107,7 @@
             <p>VESSELS</p>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addContainer('waffle cone')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1513329634746-37399553de66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt="">
@@ -113,7 +116,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addContainer('cup')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1534706936160-d5ee67737249?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8SUNFJTIwQ1JFQU0lMjBDVVB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -122,7 +125,7 @@
             </div>
           </div>
           <div class="col-4 my-3">
-            <div class="p-3 bg-light card-style" onclick="">
+            <div class="p-3 bg-light card-style" onclick="addContainer('sprinkle cone')">
               <div class=""><img
                   src="https://images.unsplash.com/photo-1504050502639-3d3c3f6266cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxESVBQRUQlMjBDT05FfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="">
@@ -200,7 +203,7 @@
 
   </main>
   <footer class="container-fluid"></footer>
-
+  <script src="app.js"></script>
 </body>
 
 </html>
