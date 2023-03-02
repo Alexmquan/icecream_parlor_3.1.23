@@ -55,9 +55,6 @@ const containers = [{
 
 
 
-
-
-
 function addContainer(container) {
   let newContainer = containers.find(con => con.name == container)
   newContainer.quantity++
@@ -72,13 +69,12 @@ function addTopping(topping) {
   drawAll()
 }
 
-function addIcecream() {
+function addIcecream(cream) {
+  let newIceCream = iceCream.find(ice => ice.name == cream)
+  newIceCream.quantity++
 
+  drawAll()
 }
-
-
-
-
 
 
 function drawAll() {
@@ -86,6 +82,7 @@ function drawAll() {
   let quantity = ''
   let cost = ''
   let total = ''
+
 
   containers.forEach(con => {
     if (con.quantity) {
@@ -105,10 +102,39 @@ function drawAll() {
       total += `<h3>$${top.quantity * top.price}</h3>`
     }
   })
+
+  iceCream.forEach(ice => {
+    if (ice.quantity) {
+      quantity += `<h3>${ice.quantity}</h3>`
+      thingName += `<h3>${ice.name}</h3>`
+      cost += `<h3>$${ice.price}</h3>`
+      total += `<h3>$${ice.quantity * ice.price}</h3>`
+    }
+  })
+
+
+
+  console.log(allTotal)
+
   document.getElementById('itemName').innerHTML = thingName
   document.getElementById('itemQuantity').innerHTML = quantity
   document.getElementById('itemCost').innerHTML = cost
   document.getElementById('itemTotal').innerHTML = total
+
+
+}
+
+
+function drawTotal() {
+  let allTotal = ''
+  let topTotal = ''
+  let conTotal = ''
+  let iceTotal = ''
+  containers.forEach(con => {
+    if (con.quantity)
+      conTotal += con.price
+  })
+
 }
 
 
